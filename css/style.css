@@ -1,7 +1,185 @@
-h1 {
-  text-align: right;
+@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore|Merriweather|Noto+Serif|PT+Serif|Pacifico');
+html{
+  font-family: 'PT Serif', serif;
+ 
+}
+h1{
+  text-align:center;
+  color: white;
+  position: absolute;
+  width: 800px;
+  top: 150px;
+  left: 350px;
+  font-size: 100px;
+  
   
 }
-.four{
-  letter-spacing: 0.5em;
+span{
+  font-family:'La Belle Aurore', cursive;
+  
 }
+header{
+  width:100%;
+  height: 650px;
+   background-image:
+ url("http://whalebonemag.com/wp-content/uploads/2016/01/photo-1449951862793-5ca2f854dcaa-1050x700.jpg" );
+  background-size: 1440px 650px;
+  background-repeat: no repeat;
+     background-color: pink;  
+}
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: black;  
+}
+nav > ul{
+  list-style: none;
+  background-color: black;
+  display: table-row;
+  
+  
+}
+nav li{
+  display: inline-block;
+  margin-right: 20px;
+  margin-top:18px;
+  margin-left: 120px;
+  color: white;
+  font-size: 17px;
+  letter-spacing: 0.1em;
+}
+
+nav li a{
+  color: white;
+  text-decoration: none;
+}
+nav li a:hover{
+  color: #89DAFF;
+}
+main{
+  width: 700px;
+  margin-left: 370px;
+}
+h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;  
+}
+#intro{
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+#intro a{
+  color: black;
+}
+#intro a:hover{ 
+  color:#048BA8;
+}
+h3{
+  font-size: 27px;
+}
+h3 a{
+  color: black;
+  text-decoration:none;
+}
+h3 a:hover{
+  color:#048BA8;
+  text-decoration: underline;
+} 
+
+input {display:none}
+#slider{
+  width:100%;
+  height:480px;
+  position:relative;
+}
+#slider div{
+  width:100%;
+  height:450px;
+  position:absolute;
+  opacity:0;
+  z-index:1;
+  transition:1s;
+  left:-30%
+ 
+}
+#slider div img{
+  left:0px;
+  position:absolute;
+  bottom:`100;
+  
+}
+
+
+/****slider buttons***/
+#slider-btns{
+  text-align:center
+}
+#slider-btns label{
+  width:15px;
+  height:15px;
+  border-radius:50px;
+  border:1px solid black;
+  display:inline-block;
+  margin-right:5px;
+  margin-bottom: 15px;
+  cursor:pointer;
+  
+}
+/***input***/
+
+#slide-1-radio:checked~#slider #slide-1{
+  opacity:1;
+  z-index:1;
+  left:0
+}
+#slide-1-radio:checked~ #slider-btns #slide-1-btn{
+  background-color:black
+}
+#slide-2-radio:checked~#slider #slide-2{
+  opacity:1;
+  z-index:1;
+  left:0
+}
+#slide-2-radio:checked~ #slider-btns #slide-2-btn{
+  background-color:black
+}
+#slide-3-radio:checked~#slider #slide-3
+{
+  opacity:1;
+  z-index:1;
+  left:0
+}
+#slide-3-radio:checked~ #slider-btns #slide-3-btn
+{
+  background-color:black
+}
+p{
+  line-height: 33px;
+  font-size: 18px;
+}
+address a{
+  color: black;
+}
+address a:hover{
+  color: #048BA8;
+}
+#map{
+  font-family: 'La Belle Aurore', cursive;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 30px;
+  }
+
